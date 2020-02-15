@@ -1,11 +1,20 @@
 import React, { Component } from "react";
+
 import "bootstrap/dist/css/bootstrap.min.css";
+import Navbar from "./components/Navbar"
+import Code from "./components/Code.js"
+
+import Row from 'react-bootstrap/Row'
 
 class App extends Component {
   render() {
     return (
         <div className="container">
-          <h2>QUACK</h2>
+          <Navbar />
+          <Row>
+            <Code />
+            <Code />
+          </Row>
         </div>  
     );
   }
