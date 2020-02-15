@@ -10,6 +10,14 @@ function Code() {
                 <p class="card-text">For i in list: </p>
                 <p> &nbsp;&nbsp;&nbsp;&nbsp;prsadfsdfssdfsdfsfdsadfsdafasfsdafsadfsdafasdfsadfasdint(i)</p>
             </div>
+            <div class="card-body">
+                <p class="card-text">For i in list: </p>
+                <p> &nbsp;&nbsp;&nbsp;&nbsp;prsadfsdfssdfsdfsfdsadfsdafasfsdafsadfsdafasdfsadfasdint(i)</p>
+            </div>
+            <div class="card-body">
+                <p class="card-text">For i in list: </p>
+                <p> &nbsp;&nbsp;&nbsp;&nbsp;prsadfsdfssdfsdfsfdsadfsdafasfsdafsadfsdafasdfsadfasdint(i)</p>
+            </div>
         </div>)
 
 }
