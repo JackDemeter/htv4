@@ -1,0 +1,10 @@
+[
+    {
+        "line": "for index in range lkist:",
+        "indentation": "20"
+    },
+    {
+        "Var": "x",
+        "While": "while(condition):"
+    }
+]
