@@ -4,12 +4,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import Navbar from "./components/Navbar.jsx";
 import Code from "./components/Code.jsx";
-import ClassCounter from './components/ClassCounter.js'
 import Require from "./components/Require.jsx"
 
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import HookCounter from "./components/HookCounter";
+
 
 
 class App extends Component {
@@ -18,7 +17,7 @@ class App extends Component {
 
     return (
 
-        <div className="container-fluid" style={{backgroundColor: '#c8d6e5'}} >
+        <div className="container-fluid" style={{backgroundColor: '#40407a'}} >
           <Navbar/>
           <p></p>
          <Row sm = {{size:"auto", offset: 1}} > 

@@ -15,11 +15,11 @@ class Require extends React.Component {
 	}
     render() {
         return (
-            <div className="card ">
-                <div className="card-header text-white" style={{backgroundColor: '#8395a7'}}>
+            <div className="card" Class= "shadow-md p-1 mb-5 bg-danger rounded">
+                <div className= "card-header text-white" style={{backgroundColor: '#1B1464'}}>
                     {this.state.name}
                 </div>
-                <div className="card-body text-white" style={{backgroundColor: '#576574'}}>
+                <div className="card-body text-white" style={{backgroundColor: '#8395a7'}}>
                     {Data.map((detail)=>{
                         var indents = "";
                         return (<li>{detail.line}</li>)})}

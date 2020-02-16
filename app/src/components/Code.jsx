@@ -15,11 +15,11 @@ class Code extends React.Component {
 	}
     render() {
         return (
-            <div className="card text-white" style={{backgroundColor: '#8395a7'}}>
-                <div className="card-header">
+            <div class="shadow-md p-1 mb-5 bg-danger rounded" overflow='scroll'>
+                <div className="card-header text-white" style={{backgroundColor: '#1B1464'}}>
                     {this.state.name}
                 </div>
-                <div className="card-body text-white" style={{backgroundColor: '#576574', lineHeight: '100%', fontFamily: 'Consolas', paddingLeft: '20px'}}>
+                <div className="card-body text-white" style={{backgroundColor: '#8395a7', lineHeight: '100%', fontFamily: 'Consolas', paddingLeft: '20px'}}>
                     <ol style = {{paddingLeft:'10px'}}>
                     {Data.map((detail, index)=>{
 
@@ -33,6 +33,7 @@ class Code extends React.Component {
                         return (
 
                         <li> <pre style={{paddingLeft: '20px', color: 'white', scrollBehavior: 'hidden'}}>{indents + detail.line}</pre></li>)})}    
+
                     </ol>
                 </div>
                 
