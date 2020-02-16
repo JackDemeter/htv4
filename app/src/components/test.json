@@ -1,9 +1,6 @@
 [
     {
         "line": "for index in range lkist:",
-        "indentation": "0"
-    },
-    {
         "Var": "x",
         "While": "while(condition):"
     }

@@ -21,7 +21,7 @@ function Navbar() {
                     <button type="button" className="btn btn-secondary">Java</button>
                 </div>
                 
-                <button className="btn btn-outline-success ml-auto" type="button" padding="30">Refresh</button>
+                <button className="btn btn-outline-success ml-auto" type="button">Refresh</button>
             </div>
         </nav>)
 

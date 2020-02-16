@@ -19,17 +19,23 @@ class Code extends React.Component {
                 <div className="card-header">
                     {this.state.name}
                 </div>
-                <div className="card-body text-white" style={{backgroundColor: '#576574'}}>
-                {Data.map((detail, index)=>{
+                <div className="card-body text-white" style={{backgroundColor: '#576574', lineHeight: '100%', fontFamily: 'Consolas', paddingLeft: '20px'}}>
+                    <ol style = {{paddingLeft:'10px'}}>
+                    {Data.map((detail, index)=>{
+
                         var indents = "";
-                        for (var i = 0; i < detail.indentation*4; i++) {
-                            indents += " ";
+                        for (var i = 0; i < detail.line.length; i++) {
+                            if (detail.line[i] == '|')
+                            {
+                                indents += "    ";
+                            }
                         }
                         return (
-                        
-                        <pre>{index + " " + indents + detail.line}</pre>)})}   
 
+                        <li> <pre style={{paddingLeft: '20px', color: 'white', scrollBehavior: 'hidden'}}>{indents + detail.line}</pre></li>)})}    
+                    </ol>
                 </div>
+                
             </div>)
     }
     getInfo(id){

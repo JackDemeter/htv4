@@ -18,21 +18,13 @@ class App extends Component {
 
     return (
 
-        <div className="container-fluid" style={{backgroundColor: '#222f3e'}} >
-
-          
-        
+        <div className="container-fluid" style={{backgroundColor: '#c8d6e5'}} >
           <Navbar/>
+          <p></p>
          <Row sm = {{size:"auto", offset: 1}} > 
-          
             <Col lg={{ size: "auto", offset: 0 }}> <Code name = "Code"/> </Col>
             <span>   <Col sm={{ size:'auto', offset: 0 }}> <Require name = "List"/> </Col>     </span>
-            
-
-
           </Row>
-
-
         </div>  
     );
   }
