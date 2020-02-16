@@ -15,19 +15,23 @@ class Code extends React.Component {
 	}
     render() {
         return (
-            <div className="card">
+            <div className="card text-white" style={{backgroundColor: '#8395a7'}}>
                 <div className="card-header">
                     {this.state.name}
                 </div>
-                <div className="card-body">
+                <div className="card-body text-white" style={{backgroundColor: '#576574'}}>
                     {Data.map((detail)=>{
                         var indents = "";
                         for (var i = 0; i < detail.line; i++) {
                             indents += " "*4;
                         }
-                        return (
                         
-                        <p>{indents} {detail.line}</p>)})}
+                        return (
+                        <p>{indents} {detail.line} </p>
+                    
+                        )
+                        })}      
+
                 </div>
             </div>)
     }

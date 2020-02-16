@@ -18,19 +18,21 @@ class App extends Component {
 
     return (
 
-        <div className="container">
-            {/*<ClassCounter/> */}
-            <HookCounter/>
+        <div className="container-fluid" style={{backgroundColor: '#222f3e'}} >
+
+          
         
           <Navbar/>
-          <Row>
+         <Row sm = {{size:"auto", offset: 1}} > 
+          
+            <Col lg={{ size: "auto", offset: 0 }}> <Code name = "Code"/> </Col>
+            <span>   <Col sm={{ size:'auto', offset: 0 }}> <Require name = "List"/> </Col>     </span>
+            
 
-            <Col sm={{ size: 'auto', offset: 0 }}> <Code name = "Code"/> </Col>
-            <Col sm={{ size: 'auto', offset: 1 }}> <Require name = "List"/> </Col>
-            <Col> </Col>
 
           </Row>
-        
+
+
         </div>  
     );
   }
