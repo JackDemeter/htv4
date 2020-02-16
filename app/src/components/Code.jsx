@@ -20,17 +20,14 @@ class Code extends React.Component {
                     {this.state.name}
                 </div>
                 <div className="card-body text-white" style={{backgroundColor: '#576574'}}>
-                    {Data.map((detail)=>{
+                {Data.map((detail, index)=>{
                         var indents = "";
-                        for (var i = 0; i < detail.line; i++) {
-                            indents += " "*4;
+                        for (var i = 0; i < detail.indentation*4; i++) {
+                            indents += " ";
                         }
-                        
                         return (
-                        <p>{indents} {detail.line} </p>
-                    
-                        )
-                        })}      
+                        
+                        <pre>{index + " " + indents + detail.line}</pre>)})}   
 
                 </div>
             </div>)

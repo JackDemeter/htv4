@@ -1,0 +1,28 @@
+[
+    {
+        
+        "equal": "% == %", 
+        "notEqual": "% != %",
+        "greater": "% > %", 
+        "less": "% < %",
+
+        "if": "if (%):", 
+        "elif": "elif (%):", 
+        "else": "else:",
+
+        "for": "for % in %:", 
+        "while": "while(%):",
+    
+        "length": "len(%)", 
+        "max": "max(%)", 
+        "min": "min(%)", 
+        "sum": "sum(%)",
+    
+        "declare": "def %(%)", 
+        "call": "%(%)",
+
+        "assign": "% = %",
+        "list": "% = []",
+        "comment": "# %" 
+    }
+]
